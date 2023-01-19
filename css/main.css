@@ -1,28 +1,108 @@
-*{
-padding: 0px;
-margin: 0%;
-width: 100%;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'SUIT', sans-serif;
 }
-.contents{
-    width: 100%;
-    height: 800px;
-}
-.header{
-    width: 100%;
-    height: 90px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    padding: 0px;
-    gap: 1400px;
+/* font-family: 'Bebas Neue', cursive; */
+
+@media (max-width: 767px) {
+
+    /*모바일*/
+    .contents {
+        width: 100%;
+        height: 568px;
+    }
+
+    .header {
+        width: 100%;
+        display: flex;
+        height: 30px;
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 0px;
+        gap: 400px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 40px;
+    }
+
+    .logo img {
+        width: 50px;
+        padding: 30px;
+    }
+
+    .menu{
+        font-family: 'SUIT-Bold';
+    }
 }
 
-.logo{
-    width: 100px;
-    height: 100px;
+@media (min-width: 768px) and (max-width: 991px) {
+    /*테블릿 세로*/
 }
 
-.logo img{
-  width: 100px;
-    padding: 30px;
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* 테블릿 가로*/
+}
+
+@media (min-width: 1024px) {
+    /* 데스크탑 일반*/
+
+    .contents {
+        width: 100%;
+        height: 800px;
+    }
+
+    .header {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 0px;
+        gap: 1400px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo img {
+        width: 140px;
+        padding: 30px;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: row;
+    }
+
+    @keyframes sample-ani{
+        0%{transform: translate(0,0);}
+        50%{
+         background: #E0C25E;
+         transform: translate(910px, 400px);} 
+        100%{transform: translate(0px, 0px);}
+     }
+     .box{
+         border-radius: 90px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 150px;
+         height: 150px;
+         font-weight: 600;
+         font-size: 24px;
+         background-color: #FF7A2F;
+         animation: sample-ani 30s linear infinite ;
+     }
+
+     .box:hover{
+         animation-play-state: paused;
+     }
+  
+
 }
