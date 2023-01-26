@@ -6,9 +6,10 @@
 }
 /* font-family: 'Bebas Neue', cursive; */
 
-@media (max-width: 767px) {
 
-    /*모바일*/
+
+
+
     .contents {
         width: 100%;
         height: 568px;
@@ -17,35 +18,134 @@
     .header {
         width: 100%;
         display: flex;
-        height: 30px;
         flex-direction: row;
         align-items: flex-end;
-        padding: 0px;
-        gap: 400px;
+        padding: 0;
+        gap: 320px;
     }
-
     .logo {
-        width: 50px;
-        height: 40px;
+        width: 100px;
+        height: 100px;
     }
 
     .logo img {
-        width: 50px;
+        width: 140px;
+        padding: 30px;
+    }
+
+
+
+    .menu{
+        display: flex;
+        flex-direction: row;
+    }
+    .menu i{
+        padding: 15px;
+        font-size: 35px;
+    }
+
+    
+    /* .shape{
+        width: 600px;
+        height: 350px;
+        translate: 100px -50px;
+        background: url(./image/shape.svg) no-repeat;        
+    } */
+
+    
+    @keyframes sample-ani{
+        0%{transform: translate(0,0);}
+        25%{transform: translate(100px, 50px);}
+        50%{
+         background: #fcd557;
+         transform: translate(330px, 200px);}
+         75%{
+            transform: translate(50px,360px);
+         } 
+        100%{transform: translate(0px, 20px);}
+     }
+     .box{
+        position: relative;
+         border-radius: 90px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 100px;
+         height: 100px;
+         font-weight: 600;
+         font-size: 16px;
+         background-color: #FF7A2F;
+         z-index: 999;
+         animation: sample-ani 25s linear infinite alternate-reverse;
+     }
+
+     .box:hover{
+         animation-play-state: paused;
+     }
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /*테블릿*/
+    .contents {
+        width: 100%;
+        height: 568px;
+    }
+
+    .header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 0px;
+        gap: 710px;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo img {
+        width: 140px;
         padding: 30px;
     }
 
     .menu{
-        font-family: 'SUIT-Bold';
+        display: flex;
+        flex-direction: row;
     }
+    .menu i{
+        padding: 15px;
+        font-size: 35px;
+    }
+    
+    @keyframes sample-ani{
+        0%{transform: translate(0,0);}
+        25%{ transform: translate(400px, 0px);}
+        50%{
+         background: #fcd557;
+         transform: translate(800px, 400px);} 
+        100%{transform: translate(0px, 200px);}
+     }
+     .box{
+         border-radius: 90px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 150px;
+         height: 150px;
+         font-weight: 600;
+         font-size: 24px;
+         background-color: #FF7A2F;
+         animation: sample-ani 30s linear infinite alternate-reverse;
+     }
+
+     .box:hover{
+         animation-play-state: paused;
+     }
+
+
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    /*테블릿 세로*/
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    /* 테블릿 가로*/
-}
 
 @media (min-width: 1024px) {
     /* 데스크탑 일반*/
@@ -62,7 +162,7 @@
         flex-direction: row;
         align-items: flex-end;
         padding: 0px;
-        gap: 1400px;
+        gap: 1360px;
     }
 
     .logo {
@@ -78,13 +178,26 @@
     .menu{
         display: flex;
         flex-direction: row;
+   
     }
+    .menu i{
+        padding: 15px;
+        font-size: 35px;
+    }
+    
+    .shape{
+        background: url(./image/Asset1.svg)  ;
+        width : 1920px ;
+        height: 700px;
 
+    }
     @keyframes sample-ani{
         0%{transform: translate(0,0);}
+        25%{ transform: translate(600px,50px);}
         50%{
          background: #E0C25E;
-         transform: translate(910px, 400px);} 
+         transform: translate(1400px, 300px);} 
+         75%{ transform: translate(200px, 500px);}
         100%{transform: translate(0px, 0px);}
      }
      .box{
@@ -97,7 +210,7 @@
          font-weight: 600;
          font-size: 24px;
          background-color: #FF7A2F;
-         animation: sample-ani 30s linear infinite ;
+         animation: sample-ani 30s linear infinite alternate-reverse;
      }
 
      .box:hover{
