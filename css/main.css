@@ -12,7 +12,7 @@
 /* 모바일 */
     .contents {
         width: 100%;
-        height: 732px;
+        height: 700px;
     }
 
     .header {
@@ -21,7 +21,8 @@
         flex-direction: row;
         align-items: flex-end;
         padding: 0;
-        gap: 295px;
+        gap: 50vw;
+      
     }
     .logo {
         width: 100px;
@@ -30,10 +31,16 @@
 
     .logo img {
         width: 140px;
-        padding: 30px;
+        padding: 20px;
     }
 
 
+    .shape img{
+        width: 165vw;
+        height: 790px;
+        translate: -11vw -39vh;
+
+    }
 
     .menu{
         display: flex;
@@ -44,14 +51,6 @@
     .menu i{
         padding: 10px;
         font-size: 30px;
-    }
-
-    
-    .shape{
-        width: 600px;
-        height: 700px;
-        translate: -20px -200px;
-        background: url(./image/shape.svg) no-repeat 0 0;        
     }
 
 
@@ -95,7 +94,7 @@
     /*테블릿 세로*/
     .contents {
         width: 100%;
-        height: 780px;
+        height: 800px;
     }
 
     .header {
@@ -104,7 +103,7 @@
         flex-direction: row;
         align-items: flex-end;
         padding: 0px;
-        gap: 710px;
+        gap: 76vw;
     }
     .logo {
         width: 100px;
@@ -113,8 +112,14 @@
 
     .logo img {
         width: 140px;
-        padding: 30px;
+        padding: 20px;
     }
+    .shape img{
+      width: 165vw;
+      height: 800px;
+      translate: -20vw -35vh;
+
+  }
 
     .menu{
         display: flex;
@@ -134,12 +139,12 @@
         100%{transform: translate(0px, 200px);}
      }
      .box{
-         border-radius: 90px;
+         border-radius: 100px;
          display: flex;
          align-items: center;
          justify-content: center;
-         width: 180px;
-         height: 180px;
+         width: 200px;
+         height: 200px;
          font-weight: 600;
          font-size: 24px;
          background-color: #FF7A2F;
@@ -150,12 +155,7 @@
          animation-play-state: paused;
      }
         
-     .shape{
-        width: 900px;
-        height: 780px;
-        translate: 120px -280px;
-        background: url(./image/shape.svg) no-repeat 0 0;        
-    }
+   
 
 
 }
@@ -180,7 +180,7 @@
         flex-direction: row;
         align-items: flex-end;
         padding: 0px;
-        gap: 1360px;
+        gap: 85vw;
     }
 
     .logo {
@@ -190,8 +190,15 @@
 
     .logo img {
         width: 140px;
-        padding: 30px;
+        padding: 20px;
     }
+     .shape img{
+        width: 100vw;
+        height: 100vh;
+        translate: 7vw -34vh;
+    }
+
+  
 
     .menu{
         display: flex;
@@ -230,17 +237,8 @@
          animation-play-state: paused;
      }
            
-    .shape{
-        width: 900px;
-        height: 900px;
-        translate: 400px -290px;
-        background: url(./image/shape.svg) no-repeat 0 0;        
-    }
-  
+      
 
-    .hito{
-        color: yellow;
-        font-size: 100px;
-    }
+
 
 }
