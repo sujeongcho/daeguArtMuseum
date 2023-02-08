@@ -9,8 +9,9 @@ let fontSize = 100;
 let fontColor = 'yellow';
 
 
+
 function preload(){
-   engine = loadFont('../fonts/SUIT-Thin.otf')
+   engine = loadFont('../fonts/SUIT-Bold.otf')
 }
 
 
@@ -24,10 +25,11 @@ function windowResized(){
    
 
 function setup() {
+   
    canvas = createCanvas(windowWidth, windowHeight);
    canvas.parent($myCanvas);
    canvas.background(0)
-   //textFont(engine);
+   textFont(engine);
    textSize(fontSize);
    colorMode(HSB)
    for(var i=0; i<width; i+=pix){   
