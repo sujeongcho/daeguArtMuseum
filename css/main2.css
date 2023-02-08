@@ -1,0 +1,360 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'SUIT', sans-serif;
+}
+
+/* font-family: 'Bebas Neue', cursive; */
+
+
+
+
+/* 모바일 */
+.contents {
+    width: 100%;
+    height: 600px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0;
+    gap: 60vw;
+
+}
+.menu{
+    display: none;
+}
+
+.logo-container {
+    width: 100px;
+    height: 100px;
+}
+
+.logo {
+    width: 100px;
+    padding: 20px;
+}
+
+
+.shape img {
+    width: 135vw;
+    height: 604px;
+    translate: -14vw -29vh;
+
+}
+
+.ver_img img {
+
+    position: absolute;
+    transform: rotate(-11.5deg);
+    left: 1%;
+    top: 20%;
+    height: 35%;
+    width: 39%;
+    z-index: -1;
+}
+
+
+.ho_img img {
+    position: absolute;
+    transform: rotate(-11deg);
+    height: 18%;
+    left: 60%;
+    top: 25%;
+    width: 38%;
+    z-index: -1;
+
+}
+
+.box a {
+    text-decoration-line: none;
+    color: black;
+}
+
+
+
+
+@keyframes sample-ani {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(100px, 50px);
+    }
+
+    50% {
+        background: #fcd557;
+        transform: translate(330px, 300px);
+    }
+
+    75% {
+        transform: translate(50px, 600px);
+    }
+
+    100% {
+        transform: translate(0px, 20px);
+    }
+}
+
+.box {
+    position: relative;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #FF7A2F;
+    z-index: 999;
+    animation: sample-ani 25s linear infinite alternate-reverse;
+}
+
+.box:hover {
+    animation-play-state: paused;
+}
+
+.news-titles{
+    list-style-type: none;
+    padding: 20px;
+    font-size: 22px;
+    font-family: 'Helvetica';
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /*테블릿 세로*/
+    .contents {
+        width: 100%;
+        height: 800px;
+    }
+
+    .header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 0px;
+        gap: 80vw;
+    }
+
+    .logo-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo img {
+        width: 100px;
+        padding: 20px;
+    }
+
+    .shape img {
+        width: 87vw;
+        height: 92vh;
+        translate: 10vw -35vh;
+
+    }
+
+    .ver_img img {
+
+        position: absolute;
+        transform: rotate(-11.5deg);
+        left: 3%;
+        top: 28%;
+        height: 48%;
+        width: 37%;
+        z-index: -1;
+    }
+
+    .ho_img img {
+        position: absolute;
+        transform: rotate(-11deg);
+        height: 30%;
+        left: 61%;
+        top: 35%;
+        width: 40%;
+        z-index: -1;
+
+    }
+
+     .icon1{
+        display: none;
+     }
+     
+
+    .menu i {
+        padding: 15px;
+        font-size: 35px;
+    }
+
+    @keyframes sample-ani {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        25% {
+            transform: translate(400px, 0px);
+        }
+
+        50% {
+            background: #fcd557;
+            transform: translate(800px, 400px);
+        }
+
+        100% {
+            transform: translate(0px, 200px);
+        }
+    }
+
+    .box {
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+        font-weight: 600;
+        font-size: 24px;
+        background-color: #FF7A2F;
+        animation: sample-ani 30s linear infinite alternate-reverse;
+    }
+
+    .box:hover {
+        animation-play-state: paused;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    /* 데스크탑 일반*/
+
+    .contents {
+        width: 100%;
+        height: 900px;
+    }
+
+    .header {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 0px;
+        gap: 84vw;
+    }
+
+    .logo-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo{
+        width: 100px;
+        padding: 20px;
+    }
+
+    .shape img {
+        width: 100vw;
+        height: 103vh;
+        translate: 0vw -34vh;
+    }
+
+    .icon1 {
+        display: block;
+    }
+
+    .ver_img img {
+
+        position: absolute;
+        transform: rotate(-11.5deg);
+        left: 10%;
+        top: 22%;
+        height: 68%;
+        width: 30%;
+        z-index: -1;
+    }
+
+    .ho_img img {
+        position: absolute;
+        transform: rotate(-11deg);
+        height: 48%;
+        left: 56%;
+        top: 32%;
+        width: 40%;
+        z-index: -1;
+
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .menu i {
+        padding: 15px;
+        font-size: 35px;
+    }
+
+
+    @keyframes sample-ani {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        25% {
+            transform: translate(600px, 50px);
+        }
+
+        50% {
+            background: #E0C25E;
+            transform: translate(1400px, 300px);
+        }
+
+        75% {
+            transform: translate(200px, 500px);
+        }
+
+        100% {
+            transform: translate(0px, 0px);
+        }
+    }
+
+    .box {
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+        font-weight: 600;
+        font-size: 26px;
+        background-color: #FF7A2F;
+        animation: sample-ani 50s linear infinite alternate-reverse;
+    }
+
+    .box:hover {
+        animation-play-state: paused;
+    }
+
+
+
+
+
+}
