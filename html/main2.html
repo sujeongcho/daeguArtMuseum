@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main2.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="shortcut icon" href="../image/LOGO_NO.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> 대구미술관</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="contents">
+            <div class="header">
+                <div class="logo-container">
+                    <img src="../image/logo.svg" alt="" class="logo">
+                </div>
+                <div class="menu">
+                    <div class="icon1">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="icon2">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <a href="https://yeyak.daegu.go.kr/yeyak/experience/experienceListView.do?memId=B0000017">
+                    전시 관람<br>예약 하기
+                </a>
+            </div>
+            <div class="banner1">
+                <div class="shape">
+                    <img src="../image/shape.svg" alt="shape">
+                </div>
+                <div class="pics">
+                    <div class="ver_img">
+                        <img src="../image/05.png" alt="image1" id="ver-img">
+                    </div>
+
+                    <div class="ho_img">
+                        <img src="../image/poster1_h.png" alt="poster1_h" id="ho-img">
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <div id="myCanvas">
+            <script src="../js/vectorfield.js"></script>
+        </div>
+        <div class="news">
+            <ul class="news-title-container">
+                <!-- 왼쪽 작업 영역 -->
+                <li class="news-titles" data-view="A">
+                    보고싶은 작품을 직접 투표해보세요!
+                </li>
+                <li class="news-titles" data-view="B">
+                  다니엘뷔렌 굿즈 출시 기념 행사
+                </li>
+                <li class="news-titles" data-view="C">
+                   2023 캘린더 나눔 이벤트 
+                </li>
+                <li class="news-titles" data-view="D">
+                  굿바이 2022 헬로우 2023 
+                </li>
+                <li class="news-titles" data-view="E">
+                    2023년 대구미술관 전시 일정
+                </li>
+                <li class="news-titles" data-view="F">
+                    추석 연휴 무료입장
+                </li>
+            </ul>
+            <div class="news-detail-image">
+                <!-- 오른쪽 작업 영역 -->
+                <div class="viewList" data-view="A"></div>
+                <div class="viewList" data-view="B"></div>
+                <div class="viewList" data-view="C"></div>
+                <div class="viewList" data-view="D"></div>
+                <div class="viewList" data-view="E"></div>
+                <div class="viewList" data-view="F"></div>
+            </div>
+        
+        </div>
+        <footer id="footer"></footer>
+    </div>
+</body>
+<script src="../js/main.js"></script>
+<script src="../js/footer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.min.js"></script>
+
+</html>
