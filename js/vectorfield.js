@@ -2,7 +2,7 @@ const $myCanvas = document.querySelector('#myCanvas');
 
 let particles = []
 var pix = 10
-var sampling = 200 //數字越大採樣越細
+var sampling = 200 
 let canvas;
 let engine;
 let fontSize = 100;
